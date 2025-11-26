@@ -1,0 +1,10 @@
+# Test dependencies for LidarForFuel Python package
+# Install with: pip install -r test/requirements.txt
+
+# Testing framework
+pytest>=7.0.0
+pytest-cov>=4.0.0  # For coverage reports
+
+# Note: Also install the main package requirements:
+# pip install -r python/requirements.txt
+

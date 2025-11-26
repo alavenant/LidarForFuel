@@ -11,9 +11,7 @@ The package contains three main modules:
 """
 
 from .fPCpretreatment import fPCpretreatment
-from .fCBDprofile_fuelmetrics import fCBDprofile_fuelmetrics
-from .ffuelmetrics import ffuelmetrics
 
 __version__ = "1.0.0"
-__all__ = ['fPCpretreatment', 'fCBDprofile_fuelmetrics', 'ffuelmetrics']
+__all__ = ['fPCpretreatment']
 

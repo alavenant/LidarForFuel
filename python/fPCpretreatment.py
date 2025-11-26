@@ -132,6 +132,7 @@ def fPCpretreatment(chunk, classify=False, LMA=140, WD=591, WD_bush=591,
         )
     
     if len(las.points) == 0:
+        print("No points in the point cloud")
         return None
     
     # Deviation days filter
@@ -173,6 +174,7 @@ def fPCpretreatment(chunk, classify=False, LMA=140, WD=591, WD_bush=591,
         
         if np.sum(ground_mask) == 0:
             warnings.warn("Only ground points in the tile. NULL returned")
+            print("Only ground points in the tile. NULL returned")
             return None
         
         # Simplified trajectory: use mean coordinates of ground points

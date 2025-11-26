@@ -9,8 +9,11 @@ dependencies:
   - scipy>=1.7.0
   - matplotlib>=3.3.0
   - rasterio>=1.2.0
+  - pytest>=7.0.0
+  - pytest-cov>=4.0.0
   - pip
   - pip:
     - laspy>=2.0.0
     - lazrs>=0.6.0  # LAZ decompression backend (required for reading .laz files)
+    - ign-pdal-tools  # PDAL tools from IGN (pdaltools)
 
