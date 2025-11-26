@@ -38,3 +38,8 @@ jobs:
         conda activate lidarforfuel
         pytest test/ -v --tb=short
 
+    - name: Test Docker build
+      run: |
+        docker build -t lidarforfuel:test -f Dockerfile .
+        docker run --rm lidarforfuel:test python -c "from python import fPCpretreatment; print('Docker image works correctly')"
+

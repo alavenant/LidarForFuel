@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  lidarforfuel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lidarforfuel:latest
+    container_name: lidarforfuel
+    volumes:
+      - ./python:/app/python
+      - ./test:/app/test
+      - ./inst:/app/inst
+      - ./Data:/app/Data
+    environment:
+      - PYTHONPATH=/app
+    stdin_open: true
+    tty: true
+    command: micromamba run -n lidarforfuel /bin/bash
+
