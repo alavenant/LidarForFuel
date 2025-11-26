@@ -1,0 +1,20 @@
+# Requirements for LidarForFuel Python package
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+numpy>=1.20.0
+pandas>=1.3.0
+
+# LiDAR file handling
+laspy>=2.0.0
+lazrs>=0.6.0  # LAZ decompression backend (required for reading .laz files)
+
+# Geospatial processing (optional but recommended)
+rasterio>=1.2.0  # For reading LMA and WD maps from GeoTIFF files
+
+# Scientific computing
+scipy>=1.7.0  # For nearest neighbor search (cKDTree)
+
+# Optional: for plotting histograms
+matplotlib>=3.3.0  # Only needed if plot_hist_days=True in fPCpretreatment
+
